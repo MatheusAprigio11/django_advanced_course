@@ -16,8 +16,8 @@ def contato(request):
     return render(request, 'contato.html')
 
 def produto(request, pk):
-    product = Produto.objects.filter(id=1).first()
+    product = Produto.objects.get(id=pk)
     context = {
         'produto': product
     }
-    return render(request, 'produto.html')
+    return render(request, 'produto.html', context)
