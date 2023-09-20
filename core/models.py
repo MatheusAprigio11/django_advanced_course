@@ -20,4 +20,3 @@ class Cliente(models.Model):
 
 
 
-#estou apredendo git
