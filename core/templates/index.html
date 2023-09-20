@@ -24,15 +24,15 @@
             </tr>
         </thead>
         <tbody>
-            {% for produto in produtos %}
+            {% for product in produtos %}
                 <tr>
-                    <td><a href="{% url 'produto' produto.id %}">{{ produto.name }}</a></p>
-                    <td>{{ produto.price }}</p> 
+                    <td><a href="{% url 'product' product.id %}">{{ product.name }}</a></p>
+                    <td>{{ product.price }}</p> 
                 </tr>
             {% endfor %}
         </tbody>
     </table>
-    <button onclick="teste();">Click here</button>
+    <button onclick="test();">Click here</button>
     </center>
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>

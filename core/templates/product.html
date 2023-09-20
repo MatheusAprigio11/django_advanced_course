@@ -5,11 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="{% static 'css/estilos.css' %}">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
-    <h1>Produto</h1>
+    <h1>Product</h1>
 
     <table>
         <thead>
@@ -21,9 +21,9 @@
         </thead>
         <tbody>
                 <tr>
-                    <td><a href="{% url 'index' %}">{{ produto.name }}</a></p>
-                    <td>{{ produto.price }}</p> 
-                    <td>{{ produto.stock  }}</td>
+                    <td><a href="{% url 'index' %}">{{ product.name }}</a></p>
+                    <td>{{ product.price }}</p> 
+                    <td>{{ product.stock  }}</td>
                 </tr>
         </tbody>
     </table>

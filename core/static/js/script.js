@@ -1,3 +1,3 @@
-function teste(){
+function test(){
     alert("that's working")
 }

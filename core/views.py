@@ -14,16 +14,16 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
-def contato(request):
-    return render(request, 'contato.html')
+def contact(request):
+    return render(request, 'contact.html')
 
-def produto(request, pk):
+def product(request, pk):
     # product = Produto.objects.get(id=pk)
     product = get_object_or_404(Produto, id=pk) # BUSCA O ID QUE O USUARIO REQUISITOU, CASO NAO ENCONTRE, DEVOLVA 404
     context = {
-        'produto': product
+        'product': product
     }
-    return render(request, 'produto.html', context)
+    return render(request, 'product.html', context)
 
 def error404(request, ex):
     template = loader.get_template('404.html')
